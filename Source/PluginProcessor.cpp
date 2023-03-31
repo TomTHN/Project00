@@ -151,7 +151,7 @@ void Project00AudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, ju
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
     juce::Random r;
-    for(int i = 0; buffer.getNumSamples(); ++i)
+    for(int i = 0; i < buffer.getNumSamples(); ++i)
     {
         for(int channel = 0; channel < buffer.getNumChannels(); ++channel)
         {
